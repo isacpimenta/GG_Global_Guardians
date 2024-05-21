@@ -8,11 +8,11 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 90vh;
-    background-color: #F0624F;
+    background-color: #003415;
 }
 
 main {
-    background-color: #EBA66A;
+    background-color: #258749;
     padding: 20px;
 
     display: flex;
