@@ -99,7 +99,7 @@ function showResults(){
         var userAnswer = (answerContainer.querySelector(selector) || {}).value;
         if(userAnswer === currentQuestion.correctAnswer.toString()){
             numCorrect++;
-            answerContainers[questionNumber].style.color = 'lightgreen';
+            answerContainers[questionNumber].style.color = 'green';
         }
         else{
             answerContainers[questionNumber].style.color = 'red';
