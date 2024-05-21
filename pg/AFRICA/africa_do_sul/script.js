@@ -102,7 +102,7 @@ function showResults(){
         
         if(userAnswer === correctLetter){
             numCorrect++;
-            answerContainers[questionNumber].getElementsByTagName('label')[correctIndex].style.backgroundColor = 'green';
+            answerContainers[questionNumber].getElementsByTagName('label')[correctIndex].style.backgroundColor = 'lightgreen';
             answerContainers[questionNumber].getElementsByTagName('label')[correctIndex].style.color = 'white';
         }
         else{
