@@ -115,6 +115,16 @@ function showResults(){
 
 submitButton.addEventListener('click', showResults);
 
+submitButton.addEventListener('click', function() {
+    showResults();
+    // Desabilitar todos os botões de rádio após o envio
+    var radioButtons = document.querySelectorAll('input[type=radio]');
+    radioButtons.forEach(function(radioButton) {
+        radioButton.disabled = true;
+    });
+});
+
+
 function shuffle(array) {
     var currentIndex = array.length, temporaryValue, randomIndex;
 
