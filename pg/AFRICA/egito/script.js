@@ -97,14 +97,19 @@ function showResults(){
         var answerContainer = answerContainers[questionNumber];
         var selector = `input[name=question${questionNumber}]:checked`;
         var userAnswer = (answerContainer.querySelector(selector) || {}).value;
-        if(userAnswer === currentQuestion.correctAnswer.toString()){
+        var correctLetter = currentQuestion.correctAnswer.toString();
+        var correctIndex = parseInt(correctLetter);
+        
+        if(userAnswer === correctLetter){
             numCorrect++;
-            answerContainers[questionNumber].style.color = 'green';
+            answerContainers[questionNumber].getElementsByTagName('label')[correctIndex].style.backgroundColor = 'green';
+            answerContainers[questionNumber].getElementsByTagName('label')[correctIndex].style.color = 'white';
         }
         else{
-            answerContainers[questionNumber].style.color = 'red';
+            answerContainers[questionNumber].getElementsByTagName('label')[correctIndex].style.backgroundColor = 'red';
+            answerContainers[questionNumber].getElementsByTagName('label')[correctIndex].style.color = 'white';
         }
-    });
+    }); 
     resultsContainer.innerHTML = `${numCorrect} out of ${randomQuestions.length}`;
 }
 
