@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿SORTE OU REVÉS?</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #results {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <fieldset>
+            <section id="conteiner-header">
+                <div>
+                    <img id="sorte_reves" src="../../img/sorte_reves.png" alt="bandeira da australia">
+                </div>
+                <div>
+                    <h1>SORTE / REVÉS</h1>
+                </div>
+            </section>
+
+            <hr>
+
+            <div id="quiz-container">
+                <div class="conteiner-animation">
+                    <div class="btn" id="sorte">SORTE</div>
+                    <div class="btn" id="reves">REVÉS</div>
+                </div>
+                <button id="submit">Girar</button>
+            </div>
+            <div id="results"></div>
+        </fieldset>
+    </main>
+
+    <script>
+        document.getElementById('submit').addEventListener('click', function() {
+            var sorteButton = document.getElementById('sorte');
+            var revesButton = document.getElementById('reves');
+            var resultsDiv = document.getElementById('results');
+
+            // Remova qualquer classe de animação existente
+            sorteButton.classList.remove('animate');
+            revesButton.classList.remove('animate');
+
+            // Adicione uma classe de animação aleatória
+            var random = Math.random() < 0.5 ? 'sorte' : 'reves';
+            var resultText = random.toUpperCase();
+            var resultColorClass = random === 'sorte' ? 'green-text' : 'red-text';
+            document.getElementById(random).classList.add('animate');
+
+            // Exibir o resultado após a animação
+            setTimeout(function() {
+                resultsDiv.innerText = 'Você obteve: ';
+                var resultSpan = document.createElement('span');
+                resultSpan.textContent = resultText;
+                resultSpan.classList.add(resultColorClass);
+                resultsDiv.appendChild(resultSpan);
+                resultsDiv.style.display = 'block'; // Mostra a div de resultados
+            }, 1000); // Tempo da animação em milissegundos
+        });
+    </script>
+</body>
+</html>
