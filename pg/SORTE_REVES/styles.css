@@ -149,6 +149,7 @@ button {
 }
 
 div#results {
+    display: none;
     margin-top: 10px;
     background-color: white;
     border: 1px solid black;
@@ -162,4 +163,10 @@ div#results {
 
 .red-text {
     color: red;
+}
+
+
+#flag {
+    margin-top: 20px;
+    display: none;
 }

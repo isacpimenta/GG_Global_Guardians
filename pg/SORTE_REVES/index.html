@@ -5,11 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¿SORTE OU REVÉS?</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        #results {
-            display: none;
-        }
-    </style>
 </head>
 <body>
     <main>
@@ -33,6 +28,11 @@
                 <button id="submit">Girar</button>
             </div>
             <div id="results"></div>
+            
+            <!-- Adding flag container and flag image -->
+            <div id="flag-container">
+                <img id="flag" src="" alt="Bandeira do país">
+            </div>
         </fieldset>
     </main>
 
@@ -48,7 +48,7 @@
             var countries = [
                 { name: 'Brasil', flagPath: '../../img/bandeiras/Brazil.png' },
                 { name: 'Argentina', flagPath: '../../img/bandeiras/Argentina.png' },
-                { name: 'Estados Unidos', flagPath: '../../img/bandeiras/eua.png' },
+                { name: 'Estados Unidos', flagPath: '../../img/bandeiras/estados-unidos.png' },
                 { name: 'México', flagPath: '../../img/bandeiras/mexico.png' },
                 { name: 'Venezuela', flagPath: '../../img/bandeiras/Venezuela.png'},
 
@@ -57,6 +57,21 @@
                 { name: 'Egito', flagPath: '../../img/bandeiras/Egito.svg' },
                 { name: 'Nigéria', flagPath: '../../img/bandeiras/Nigeria.svg' },
                 { name: 'Síria', flagPath: '../../img/bandeiras/Syria.png'},
+
+                { name: 'Coreia do Norte', flagPath: '../../img/bandeiras/Flag_of_North_Korea.png' },
+                { name: 'Índia', flagPath: '../../img/bandeiras/India.png' },
+                { name: 'Israel', flagPath: '../../img/bandeiras/Israel.png' },
+                { name: 'Japão', flagPath: '../../img/bandeiras/Japan.png' },
+                { name: 'Paquistão', flagPath: '../../img/bandeiras/Paquistao.png'},
+
+                { name: 'Alemanha', flagPath: '../../img/bandeiras/alemanha.png' },
+                { name: 'Grécia', flagPath: '../../img/bandeiras/Greece.png' },
+                { name: 'Inglaterra', flagPath: '../../img/bandeiras/England.png' },
+                { name: 'Ucrânia', flagPath: '../../img/bandeiras/ucrania.png' },
+
+                { name: 'Austrália', flagPath: '../../img/bandeiras/Australia.png' },
+                { name: 'Nova Zelândia', flagPath: '../../img/bandeiras/New_Zealand.png' },
+                { name: 'Tuvalu', flagPath: '../../img/bandeiras/Tuvalu.png' },
                 // Adicione os demais países aqui
             ];
 
@@ -80,6 +95,7 @@
                 flagImg.src = randomCountry.flagPath;
                 flagImg.alt = 'Bandeira do ' + randomCountry.name;
                 flagContainer.style.display = 'block'; // Mostra o contêiner da bandeira
+                flagImg.style.display = 'block';
             }, 1000); // Tempo da animação em milissegundos
     });
 
