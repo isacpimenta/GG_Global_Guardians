@@ -73,7 +73,7 @@ function buildQuiz(){
     randomQuestions.forEach(
         (currentQuestion, questionNumber) => {
             var answers = [];
-            for(letter in currentQuestion.choices){
+            for (let letter in currentQuestion.choices) {
                 answers.push(
                     `<label>
                         <input type="radio" name="question${questionNumber}" value="${letter}">
@@ -113,8 +113,6 @@ function showResults(){
     resultsContainer.innerHTML = `${numCorrect} out of ${randomQuestions.length}`;
 }
 
-submitButton.addEventListener('click', showResults);
-
 submitButton.addEventListener('click', function() {
     showResults();
     // Desabilitar todos os botões de rádio após o envio
@@ -123,7 +121,6 @@ submitButton.addEventListener('click', function() {
         radioButton.disabled = true;
     });
 });
-
 
 function shuffle(array) {
     var currentIndex = array.length, temporaryValue, randomIndex;
@@ -140,4 +137,37 @@ function shuffle(array) {
     return array;
 }
 
+// Obtém a referência para o elemento <aside>
+const aside = document.querySelector('aside');
+
+// Obtém a referência para o botão de fechar a dica
+const closeButton = document.getElementById('closeHint');
+
+// Define o conteúdo da dica
+const dica = '<p>Dica: Ao abordar questões sobre a África do Sul, destaque como as políticas, culturas e desafios pós-apartheid influenciaram as dinâmicas sociais e identitárias, fornecendo uma compreensão abrangente do contexto histórico e contemporâneo do país.</p>';
+
+// Adiciona um evento de clique à imagem da lâmpada
+lampada.addEventListener('click', () => {
+    // Exibe a dica no elemento <aside>
+    aside.innerHTML = dica;
+    showHint(); // Chama a função showHint() para mostrar o botão "Fechar Dica"
+});
+
+// Função para mostrar a dica e o botão "Fechar Dica"
+function showHint() {
+    // Mostra a dica
+    aside.style.display = 'block';
+    
+    // Mostra o botão de fechar a dica
+    closeButton.style.display = 'block';
+}
+
+// Adicione um evento de clique ao botão para fechar a dica
+closeButton.addEventListener('click', function() {
+    // Esconde a dica
+    aside.style.display = 'none';
+    
+    // Esconde o botão de fechar a dica
+    closeButton.style.display = 'none';
+});
 buildQuiz();
