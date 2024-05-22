@@ -88,6 +88,7 @@
             // Exibir o resultado após a animação
             setTimeout(function() {
                 resultsDiv.innerText = 'Você obteve: ' + resultText;
+                resultsDiv.classList.add(resultColorClass); // Set the color based on result
                 resultsDiv.style.display = 'block'; // Mostra a div de resultados
 
                 // Escolha um país aleatório e exiba sua bandeira
@@ -97,7 +98,9 @@
                 flagContainer.style.display = 'block'; // Mostra o contêiner da bandeira
                 flagImg.style.display = 'block';
             }, 1000); // Tempo da animação em milissegundos
-    });
+
+            console.log(resultColorClass)
+        });
 
     </script>
 </body>
