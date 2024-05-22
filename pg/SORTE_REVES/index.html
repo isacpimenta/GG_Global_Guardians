@@ -97,6 +97,9 @@
                 flagImg.alt = 'Bandeira do ' + randomCountry.name;
                 flagContainer.style.display = 'block'; // Mostra o contêiner da bandeira
                 flagImg.style.display = 'block';
+
+                // Adicione a borda à imagem da bandeira
+                flagImg.style.border = '2px solid black'; // Modifique a cor e o tamanho da borda conforme necessário
             }, 1000); // Tempo da animação em milissegundos
 
             console.log(resultColorClass)
