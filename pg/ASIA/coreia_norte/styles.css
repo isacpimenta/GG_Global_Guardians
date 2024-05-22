@@ -106,3 +106,25 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
+
+aside {
+    background-color: white;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+aside div {
+    display: flex;
+    flex-direction: column;
+}
+
+#lampada {
+    border: none;
+    cursor: pointer;
+}
+
+p {
+    text-align: justify;
+    padding: 0 50px;
+}

@@ -202,3 +202,18 @@ function shuffle(array) {
 }
 
 buildQuiz();
+
+// Obtém a referência para a imagem da lâmpada
+const lampada = document.querySelector('#lampada');
+
+// Obtém a referência para o elemento <aside>
+const aside = document.querySelector('aside');
+
+// Define o conteúdo da dica
+const dica = '<p>Dica: Reconhecer, valorizar e respeitar a diversidade cultural e étnica do Brasil é essencial para promover inclusão, justiça social e preservação das tradições. Isso se reflete desde as manifestações culturais, como o Carnaval e as festas religiosas, até as políticas de cotas raciais, passando pela luta por direitos territoriais das comunidades indígenas e quilombolas. A música, as leis históricas e os movimentos sociais também desempenham papéis fundamentais nesse processo, contribuindo para uma sociedade mais igualitária e consciente.</p>';
+
+// Adiciona um evento de clique à imagem da lâmpada
+lampada.addEventListener('click', () => {
+    // Exibe a dica no elemento <aside>
+    aside.innerHTML = dica;
+});

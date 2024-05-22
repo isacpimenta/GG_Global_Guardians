@@ -4,66 +4,67 @@ var submitButton = document.getElementById('submit');
 
 var questions = [
     {
-        question: 'Como as diferentes etnias na Nigéria contribuem para a diversidade cultural do país? a língua oficial do Egito?',
-        choices: ['Cada etnia domina a cultura em diferentes regiões.', 'As etnias competem entre si, resultando em divisões culturais.', 'As diferentes etnias enriquecem a diversidade cultural da Nigéria.', 'A cultura nigeriana é uniforme, independentemente da etnia.'],
-        correctAnswer: 2
-    },
-    {
-        question: 'Quais são os efeitos da urbanização rápida na Nigéria em termos de identidade cultural e coesão social?',
-        choices: ['A urbanização rápida fortalece a identidade cultural e promove a coesão social.', 'A urbanização rápida não tem impacto na identidade cultural e coesão social. ', 'A urbanização rápida cria uma cultura homogênea e fortalece a coesão social. ', 'A urbanização rápida leva à perda de identidade cultural e aumenta a divisão social.'],
+        question: "Qual é a diversidade étnica no Sudão?",
+        choices: ["Árabe", "Núbio", "Beja", "Todas as opções acima"],
         correctAnswer: 3
     },
     {
-        question: 'De que forma o legado colonial na Nigéria influenciou as estruturas sociais e raciais do país?al é uma das mais famosas maravilhas arquitetônicas do Egito Antigo?',
-        choices: ['O colonialismo fortaleceu as estruturas sociais tradicionais. ', 'O legado colonial diminuiu as divisões raciais na Nigéria.',  'O legado colonial teve pouco impacto nas estruturas sociais e raciais. ','O colonialismo exacerbou divisões raciais e étnicas.'],
+        question: "Como a diversidade étnica do Sudão influencia sua cultura?",
+        choices: ["Através de práticas culinárias variadas", "Na música e na dança", "Nas tradições religiosas", "Todas as opções acima"],
         correctAnswer: 3
     },
     {
-        question: 'Quais são os principais desafios enfrentados pelas mulheres na Nigéria em termos de igualdade de gênero?',
-        choices: ['A violência de gênero e a discriminação persistem em vários aspectos da vida das mulheres.', 'As mulheres nigerianas desfrutam de igualdade de gênero. ', 'A desigualdade de gênero é um problema exclusivo das áreas rurais. ', 'A igualdade de gênero é alcançada por meio de políticas governamentais eficazes. '],
+        question: "Quais são os desafios enfrentados pelas minorias étnicas no Sudão?",
+        choices: ["Discriminação racial", "Falta de representação política", "Restrições ao uso da língua nativa", "Todas as opções acima"],
+        correctAnswer: 3
+    },
+    {
+        question: "Como a sustentabilidade é abordada no Sudão?",
+        choices: ["Através de práticas agrícolas tradicionais", "Implementação de políticas de conservação ambiental", "Promoção de fontes de energia renovável", "Todas as opções acima"],
+        correctAnswer: 3
+    },
+    {
+        question: "Como a diversidade étnica do Sudão contribui para sua riqueza cultural?",
+        choices: ["Através de festivais e celebrações únicas", "Na preservação de línguas e tradições ancestrais", "Na arquitetura e artesanato", "Todas as opções acima"],
+        correctAnswer: 3
+    },
+    {
+        question: "Como as políticas governamentais podem promover a inclusão social no Sudão?",
+        choices: ["Através de programas de educação inclusiva", "Implementação de leis antidiscriminação", "Criação de oportunidades de emprego equitativas", "Todas as opções acima"],
+        correctAnswer: 3
+    },
+    {
+        question: "Qual é a importância da preservação da diversidade cultural para o desenvolvimento sustentável?",
+        choices: ["Promove o respeito mútuo e a compreensão entre as comunidades", "Contribui para a inovação e a criatividade", "Fortalece o tecido social e a coesão comunitária", "Todas as opções acima"],
+        correctAnswer: 3
+    },
+    {
+        question: "Como a migração influencia a diversidade étnica e cultural do Sudão?",
+        choices: ["Introduz novas tradições e costumes", "Contribui para a troca de ideias e experiências", "Pode causar tensões entre grupos étnicos", "Todas as opções acima"],
+        correctAnswer: 3
+    },
+    {
+        question: "Como o Sudão pode promover a igualdade de gênero para garantir uma sociedade mais inclusiva?",
+        choices: ["Através da implementação de leis que protegem os direitos das mulheres", "Investindo em educação e capacitação para mulheres", "Promovendo a participação das mulheres na tomada de decisões", "Todas as opções acima"],
+        correctAnswer: 3
+    },
+    {
+        question: "Quais são os principais desafios ambientais enfrentados pelo Sudão?",
+        choices: ["Desertificação", "Escassez de água", "Poluição do ar e da água", "Todas as opções acima"],
+        correctAnswer: 3
+    },
+    {
+        question: "Qual das seguintes religiões é predominante no Sudão?",
+        choices: ["Islamismo", "Cristianismo", "Judaísmo", "Hinduísmo"],
         correctAnswer: 0
     },
     {
-        question: 'Qual é o papel das religiões na formação da identidade cultural da Nigéria?',
-        choices: ['As religiões desempenham um papel secundário na identidade cultural.', 'A religião é a única fonte de identidade cultural na Nigéria. ', 'A identidade cultural nigeriana é completamente secular, sem influência religiosa. ', 'As religiões coexistem e influenciam a identidade cultural de maneiras diversas. '],
-        correctAnswer: 3
-    },
-    {
-        question: 'Como a migração interna e internacional afeta a composição étnica e cultural da Nigéria?',
-        choices: ['A migração internacional leva à homogeneização cultural. ', 'A migração cria uma diversidade étnica e cultural dinâmica no país. ', ' A migração interna fortalece as identidades étnicas locais. ', 'A migração não tem impacto na composição étnica e cultural.'],
-        correctAnswer: 1
-    },
-    {
-        question: 'Qual é o impacto da indústria do entretenimento nigeriano, como Nollywood, na projeção da cultura nigeriana globalmente?',
-        choices: ['A indústria do entretenimento nigeriano tem pouco impacto internacional. ', 'Nollywood promove estereótipos negativos sobre a cultura nigeriana. ', 'A indústria do entretenimento nigeriano projeta uma imagem positiva e vibrante da cultura do país. ', 'A cultura nigeriana não é representada na indústria do entretenimento. '],
-        correctAnswer: 2
-    },
-    {
-        question: 'Como as políticas governamentais na Nigéria abordam questões de diversidade étnica e racial?',
-        choices: [' A diversidade étnica e racial é valorizada e promovida nas políticas governamentais. ', 'Não existem políticas governamentais relacionadas à diversidade étnica e racial. ', 'As políticas governamentais ignoram questões de diversidade étnica e racial. ', 'As políticas governamentais promovem a segregação étnica e racial. '],
-        correctAnswer: 0
-    },
-    {
-        question: 'Quais são os desafios enfrentados pelas comunidades LGBTQ+ na Nigéria em termos de direitos humanos e inclusão social?',
-        choices: [' A Nigéria é um país inclusivo para a comunidade LGBTQ+. ', 'A comunidade LGBTQ+ desfruta de todos os direitos humanos sem discriminação. ', 'A legislação anti-LGBTQ+ cria desafios significativos de direitos humanos e inclusão social. ', 'Os desafios enfrentados pela comunidade LGBTQ+ são exclusivos das áreas urbanas. '],
-        correctAnswer: 2
-    },
-    {
-        question: 'Qual é o papel das tradições culturais nigerianas na resolução de conflitos e na promoção da coesão social?',
-        choices: ['As tradições culturais são irrelevantes para questões de conflito e coesão social. ', 'As tradições culturais desempenham um papel importante na resolução de conflitos e na promoção da coesão social. ', 'As tradições culturais perpetuam conflitos étnicos e sociais. ', 'As tradições culturais nigerianas não têm impacto na resolução de conflitos. '],
-        correctAnswer: 1
-    },
-    {
-        question: 'De que maneira as disparidades econômicas na Nigéria impactam a mobilidade social e as oportunidades de educação?',
-        choices: ['As disparidades econômicas não afetam a mobilidade social. ', 'As disparidades econômicas criam oportunidades iguais para todos. ', 'As disparidades econômicas limitam a mobilidade social e o acesso à educação. ', 'Não existem disparidades econômicas na Nigéria. '],
-        correctAnswer: 2
-    },
-    {
-        question: 'Como a diáspora nigeriana contribui para a disseminação da cultura e da influência do país globalmente?',
-        choices: ['A diáspora nigeriana promove a cultura e a influência do país em todo o mundo. ', 'A diáspora nigeriana enfraquece a influência cultural do país no exterior. ', 'A diáspora nigeriana tem pouco impacto na disseminação da cultura do país. ', 'A diáspora nigeriana é irrelevante para a cultura e a influência do país. '],
+        question: "Que rio é vital para a agricultura e economia do Sudão?",
+        choices: ["Nilo", "Níger", "Congo", "Zambeze"],
         correctAnswer: 0
     }
-];
+]
+
 
 // Define the random questions once and reuse the same set
 var randomQuestions = shuffle(questions).slice(0, 3);
@@ -139,5 +140,21 @@ function shuffle(array) {
 
     return array;
 }
+
+
+// Obtém a referência para a imagem da lâmpada
+const lampada = document.querySelector('#lampada');
+
+// Obtém a referência para o elemento <aside>
+const aside = document.querySelector('aside');
+
+// Define o conteúdo da dica
+const dica = '<p>Dica: Para entender a complexidade da Síria, lembre-se: sua diversidade étnica e religiosa enriquece sua cultura; a guerra civil causou divisões e deslocamentos; minorias enfrentam perseguição; políticas exacerbam divisões; a religião influencia relações sociais e políticas; mulheres enfrentam discriminação; a diáspora preserva a identidade; políticas de refugiados dificultam a integração; a destruição do patrimônio é uma perda irreparável; a educação promove tolerância; jovens sofrem com falta de acesso à educação e emprego; ONGs desempenham papel crucial na ajuda humanitária.</p>';
+
+// Adiciona um evento de clique à imagem da lâmpada
+lampada.addEventListener('click', () => {
+    // Exibe a dica no elemento <aside>
+    aside.innerHTML = dica;
+});
 
 buildQuiz();

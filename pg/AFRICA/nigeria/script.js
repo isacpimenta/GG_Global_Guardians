@@ -140,4 +140,19 @@ function shuffle(array) {
     return array;
 }
 
+// Obtém a referência para a imagem da lâmpada
+const lampada = document.querySelector('#lampada');
+
+// Obtém a referência para o elemento <aside>
+const aside = document.querySelector('aside');
+
+// Define o conteúdo da dica
+const dica = '<p>Dica: Explore e celebre a diversidade nigeriana: Desde as diferentes etnias até a influência colonial, questões de gênero, religião, migração, indústria do entretenimento, políticas governamentais, desafios LGBTQ+, tradições culturais, disparidades econômicas, diáspora e urbanização, reconhecer e valorizar essa diversidade é crucial para promover a igualdade, preservar tradições e fortalecer a coesão social.</p>';
+
+// Adiciona um evento de clique à imagem da lâmpada
+lampada.addEventListener('click', () => {
+    // Exibe a dica no elemento <aside>
+    aside.innerHTML = dica;
+});
+
 buildQuiz();

@@ -201,3 +201,18 @@ function shuffle(array) {
 }
 
 buildQuiz();
+
+// Obtém a referência para a imagem da lâmpada
+const lampada = document.querySelector('#lampada');
+
+// Obtém a referência para o elemento <aside>
+const aside = document.querySelector('aside');
+
+// Define o conteúdo da dica
+const dica = '<p>Dica: Reconhecer, respeitar e valorizar a diversidade é fundamental para promover igualdade e inclusão em todas as esferas da sociedade argentina, seja nas políticas públicas, no ambiente de trabalho, na mídia, na preservação cultural ou no combate à discriminação e à desigualdade socioeconômica.</p>';
+
+// Adiciona um evento de clique à imagem da lâmpada
+lampada.addEventListener('click', () => {
+    // Exibe a dica no elemento <aside>
+    aside.innerHTML = dica;
+});

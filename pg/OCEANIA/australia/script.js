@@ -141,3 +141,18 @@ function shuffle(array) {
 }
 
 buildQuiz();
+
+// Obtém a referência para a imagem da lâmpada
+const lampada = document.querySelector('#lampada');
+
+// Obtém a referência para o elemento <aside>
+const aside = document.querySelector('aside');
+
+// Define o conteúdo da dica
+const dica = '<p>Dica: Na Austrália, a rica cultura aborígine é valorizada através de elementos como música, arte, dança e histórias tradicionais, enquanto a imigração é celebrada, promovendo a diversidade étnica. As mulheres desempenham papéis ativos na sociedade, e políticas de conservação e investimento em energias renováveis demonstram um compromisso com a proteção ambiental. Apesar dos desafios enfrentados pelos povos indígenas, políticas inclusivas protegem os direitos da comunidade LGBTQ+ e promovem igualdade de acesso à educação. O esporte desempenha um papel importante na identidade e coesão social, enquanto políticas inclusivas e respeito aos direitos humanos são fundamentais para a justiça social. O turismo contribui para a economia e promove diversidade cultural, mas a urbanização pode impactar negativamente as comunidades rurais. A Austrália aborda questões de acessibilidade e igualdade na educação e prioriza a sustentabilidade ambiental através de políticas de conservação e proteção.</p>';
+
+// Adiciona um evento de clique à imagem da lâmpada
+lampada.addEventListener('click', () => {
+    // Exibe a dica no elemento <aside>
+    aside.innerHTML = dica;
+});

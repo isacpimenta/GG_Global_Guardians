@@ -202,3 +202,18 @@ function shuffle(array) {
 }
 
 buildQuiz();
+
+// Obtém a referência para a imagem da lâmpada
+const lampada = document.querySelector('#lampada');
+
+// Obtém a referência para o elemento <aside>
+const aside = document.querySelector('aside');
+
+// Define o conteúdo da dica
+const dica = '<p>Dica: Reconhecer e valorizar a diversidade cultural e étnica é essencial para entender a riqueza e os desafios do México. Isso inclui desde a preservação das tradições indígenas até o enfrentamento da discriminação de gênero e das desigualdades sociais. O papel da educação, da música, da culinária e do turismo é fundamental para promover inclusão e crescimento, enquanto o narcotráfico e as políticas governamentais têm impactos significativos na sociedade.</p>';
+
+// Adiciona um evento de clique à imagem da lâmpada
+lampada.addEventListener('click', () => {
+    // Exibe a dica no elemento <aside>
+    aside.innerHTML = dica;
+});

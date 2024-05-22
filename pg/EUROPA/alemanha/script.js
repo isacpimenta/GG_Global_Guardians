@@ -152,3 +152,18 @@ function shuffle(array) {
 }
 
 buildQuiz();
+
+// Obtém a referência para a imagem da lâmpada
+const lampada = document.querySelector('#lampada');
+
+// Obtém a referência para o elemento <aside>
+const aside = document.querySelector('aside');
+
+// Define o conteúdo da dica
+const dica = '<p>Dica: Na Alemanha, políticas inclusivas e reflexões profundas sobre sua história, como o nazismo, moldam a abordagem em questões de diversidade étnica e racial, integração de comunidades estrangeiras e inclusão no mercado de trabalho. A promoção da diversidade, seja nas políticas de habitação, educação ou cultura, reflete o compromisso com a coesão social e a igualdade de oportunidades, mesmo diante do desafio do envelhecimento populacional. Além disso, a União Europeia fortalece esses valores ao promover cooperação cultural e diversidade.</p>';
+
+// Adiciona um evento de clique à imagem da lâmpada
+lampada.addEventListener('click', () => {
+    // Exibe a dica no elemento <aside>
+    aside.innerHTML = dica;
+});

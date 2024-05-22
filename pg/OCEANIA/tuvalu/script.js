@@ -151,3 +151,18 @@ function shuffle(array) {
 }
 
 buildQuiz();
+
+// Obtém a referência para a imagem da lâmpada
+const lampada = document.querySelector('#lampada');
+
+// Obtém a referência para o elemento <aside>
+const aside = document.querySelector('aside');
+
+// Define o conteúdo da dica
+const dica = '<p>Dica: Tuvalu, um país insular do Pacífico, preserva suas tradições culturais através de danças tradicionais e canções polinésias. Suas famílias são geralmente extensas, e o país é composto por nove atóis. Agricultura e pesca são as principais fontes de subsistência. Tuvalu celebra sua cultura com festivais anuais de música e dança, falando principalmente Tuvaluan e inglês. O país protege sua identidade cultural promovendo suas tradições e línguas, além de celebrar a diversidade e promover a inclusão social. As atividades de lazer incluem esportes aquáticos e festivais culturais. A saúde é uma prioridade, e Tuvalu busca soluções internacionais para enfrentar as mudanças climáticas e a elevação do nível do mar.</p>';
+
+// Adiciona um evento de clique à imagem da lâmpada
+lampada.addEventListener('click', () => {
+    // Exibe a dica no elemento <aside>
+    aside.innerHTML = dica;
+});

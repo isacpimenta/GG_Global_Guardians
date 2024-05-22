@@ -152,3 +152,18 @@ function shuffle(array) {
 }
 
 buildQuiz();
+
+// Obtém a referência para a imagem da lâmpada
+const lampada = document.querySelector('#lampada');
+
+// Obtém a referência para o elemento <aside>
+const aside = document.querySelector('aside');
+
+// Define o conteúdo da dica
+const dica = '<p>Dica: O Paquistão, com sua capital em Islamabad, é uma nação diversa, onde o islamismo é a religião predominante. Sua língua oficial é o Urdu, e a língua Punjabi desempenha um papel central na identidade nacional. O país prioriza acesso universal à educação e saúde, enfrenta desafios como desigualdade de gênero e casamento infantil e valoriza o Rio Indo por sua importância agrícola. O governo é uma república parlamentar, e o Paquistão promove políticas de conservação ambiental. Além disso, enfatiza os direitos das mulheres e contribui culturalmente com a arte islâmica e a música qawwali.</p>';
+
+// Adiciona um evento de clique à imagem da lâmpada
+lampada.addEventListener('click', () => {
+    // Exibe a dica no elemento <aside>
+    aside.innerHTML = dica;
+});

@@ -202,3 +202,18 @@ function shuffle(array) {
 }
 
 buildQuiz();
+
+// Obtém a referência para a imagem da lâmpada
+const lampada = document.querySelector('#lampada');
+
+// Obtém a referência para o elemento <aside>
+const aside = document.querySelector('aside');
+
+// Define o conteúdo da dica
+const dica = '<p>Dica: O Japão, uma nação com uma rica cultura e tradições, valoriza a excelência acadêmica e promove a igualdade de gênero. Sua capital é Tóquio e preserva sua identidade cultural única através da promoção de suas tradições e festivais. Alimentos tradicionais como sushi e sashimi são populares, enquanto a sociedade japonesa valoriza a honra nas interações sociais. O país também prioriza a acessibilidade e inclusão para pessoas com deficiência, com leis e políticas específicas. No sistema educacional, a diversidade cultural é celebrada e a saúde mental é uma prioridade, com amplo acesso a serviços de apoio e tratamento. Porém, o Japão tende a ser restritivo em relação à imigração e diversidade étnica.</p>';
+
+// Adiciona um evento de clique à imagem da lâmpada
+lampada.addEventListener('click', () => {
+    // Exibe a dica no elemento <aside>
+    aside.innerHTML = dica;
+});

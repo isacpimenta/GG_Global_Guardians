@@ -140,4 +140,19 @@ function shuffle(array) {
     return array;
 }
 
+// Obtém a referência para a imagem da lâmpada
+const lampada = document.querySelector('#lampada');
+
+// Obtém a referência para o elemento <aside>
+const aside = document.querySelector('aside');
+
+// Define o conteúdo da dica
+const dica = '<p>Dica: Explore e celebre a diversidade angolana: Desde as tradições culinárias até as festividades tradicionais, passando pela música, religião e questões socioeconômicas, a riqueza da identidade angolana é forjada pela influência de várias culturas, e reconhecer e valorizar essa diversidade é essencial para promover a igualdade, preservar tradições e fortalecer a coesão social.</p>';
+
+// Adiciona um evento de clique à imagem da lâmpada
+lampada.addEventListener('click', () => {
+    // Exibe a dica no elemento <aside>
+    aside.innerHTML = dica;
+});
+
 buildQuiz();

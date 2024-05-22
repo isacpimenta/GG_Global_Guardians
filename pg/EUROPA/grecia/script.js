@@ -152,3 +152,18 @@ function shuffle(array) {
 }
 
 buildQuiz();
+
+// Obtém a referência para a imagem da lâmpada
+const lampada = document.querySelector('#lampada');
+
+// Obtém a referência para o elemento <aside>
+const aside = document.querySelector('aside');
+
+// Define o conteúdo da dica
+const dica = '<p>Dica: A Grécia preserva sua rica herança cultural e histórica através de políticas de proteção e promoção, enquanto a religião atua como uma força unificadora na sociedade. No entanto, desafios econômicos geram tensões sociais, especialmente para os jovens, que enfrentam dificuldades de acesso à educação e emprego. A crise dos refugiados também traz desafios significativos para a integração social e cultural. A Grécia promove a igualdade racial e social através de políticas eficazes, enquanto a juventude desempenha um papel importante na mudança social e política. Políticas de integração são implementadas para lidar com a diversidade étnica, embora a crise econômica tenha criado divisões e tensões na sociedade. A acessibilidade para pessoas com deficiência é uma prioridade, e as tradições culturais desempenham um papel fundamental na identidade nacional, enquanto políticas de inclusão protegem os direitos LGBTQ+. </p>';
+
+// Adiciona um evento de clique à imagem da lâmpada
+lampada.addEventListener('click', () => {
+    // Exibe a dica no elemento <aside>
+    aside.innerHTML = dica;
+});

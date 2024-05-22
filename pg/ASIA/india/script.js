@@ -201,3 +201,18 @@ function shuffle(array) {
 }
 
 buildQuiz();
+
+// Obtém a referência para a imagem da lâmpada
+const lampada = document.querySelector('#lampada');
+
+// Obtém a referência para o elemento <aside>
+const aside = document.querySelector('aside');
+
+// Define o conteúdo da dica
+const dica = '<p>Dica: A Índia é um país de grande diversidade cultural, religiosa e linguística, onde o hinduísmo e o islamismo são as principais religiões. O sistema de castas, apesar de proibido, ainda influencia a sociedade. O país adota uma república parlamentar e enfrenta desafios socioeconômicos como pobreza e desigualdade de renda. A Índia prioriza a igualdade de gênero e busca garantir acesso universal à saúde e educação. Celebrando sua rica diversidade, o país contribui para o mundo com práticas como o yoga e Ayurveda. O apoio à família estendida é fundamental na cultura indiana. Em resumo, a Índia valoriza sua diversidade, promove inclusão e busca melhorar o acesso a serviços essenciais para todos os cidadãos.</p>';
+
+// Adiciona um evento de clique à imagem da lâmpada
+lampada.addEventListener('click', () => {
+    // Exibe a dica no elemento <aside>
+    aside.innerHTML = dica;
+});

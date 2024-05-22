@@ -141,3 +141,18 @@ function shuffle(array) {
 }
 
 buildQuiz();
+
+// Obtém a referência para a imagem da lâmpada
+const lampada = document.querySelector('#lampada');
+
+// Obtém a referência para o elemento <aside>
+const aside = document.querySelector('aside');
+
+// Define o conteúdo da dica
+const dica = '<p>Dica: Israel, um país com uma rica diversidade cultural e religiosa, tem em Jerusalém sua capital. Sua população pratica principalmente o Judaísmo, mas também inclui Cristianismo e Islamismo. O Kibbutz representa uma forma de vida comunitária agrícola. Israel promove a igualdade étnica, valoriza a inovação tecnológica e apoia os direitos das mulheres. O Mar Morto é famoso por suas propriedades terapêuticas. O hebraico é a língua oficial. O país é inclusivo para pessoas com deficiência e preserva locais como o Muro das Lamentações, importante para o Judaísmo. Israel também se destaca na conservação ambiental. Porém, é conhecido pelo conflito com seus vizinhos, o Conflito Árabe-Israelense.</p>';
+
+// Adiciona um evento de clique à imagem da lâmpada
+lampada.addEventListener('click', () => {
+    // Exibe a dica no elemento <aside>
+    aside.innerHTML = dica;
+});

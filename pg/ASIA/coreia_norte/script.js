@@ -201,3 +201,18 @@ function shuffle(array) {
 }
 
 buildQuiz();
+
+// Obtém a referência para a imagem da lâmpada
+const lampada = document.querySelector('#lampada');
+
+// Obtém a referência para o elemento <aside>
+const aside = document.querySelector('aside');
+
+// Define o conteúdo da dica
+const dica = '<p>Dica: Na Coreia do Norte, o controle totalitário do governo se reflete em todos os aspectos da sociedade, desde o regime político até as restrições na mídia e nas liberdades individuais. O culto à personalidade dos líderes, a censura da mídia e a imposição de uma única religião oficial são características marcantes. Além disso, políticas discriminatórias em relação às mulheres e restrições na liberdade de reprodução também são evidentes. Em resumo, a Coreia do Norte é um estado altamente controlado pelo governo, onde as práticas culturais e sociais são moldadas para sustentar o regime e preservar o poder das autoridades.</p>';
+
+// Adiciona um evento de clique à imagem da lâmpada
+lampada.addEventListener('click', () => {
+    // Exibe a dica no elemento <aside>
+    aside.innerHTML = dica;
+});
