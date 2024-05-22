@@ -41,6 +41,24 @@
             var sorteButton = document.getElementById('sorte');
             var revesButton = document.getElementById('reves');
             var resultsDiv = document.getElementById('results');
+            var flagImg = document.getElementById('flag');
+            var flagContainer = document.getElementById('flag-container');
+
+            // Lista de países com seus nomes e caminhos das bandeiras
+            var countries = [
+                { name: 'Brasil', flagPath: '../../img/bandeiras/Brazil.png' },
+                { name: 'Argentina', flagPath: '../../img/bandeiras/Argentina.png' },
+                { name: 'Estados Unidos', flagPath: '../../img/bandeiras/eua.png' },
+                { name: 'México', flagPath: '../../img/bandeiras/mexico.png' },
+                { name: 'Venezuela', flagPath: '../../img/bandeiras/Venezuela.png'},
+
+                { name: 'Africa do Sul', flagPath: '../../img/bandeiras/South_Africa.png' },
+                { name: 'Angola', flagPath: '../../img/bandeiras/angola.png' },
+                { name: 'Egito', flagPath: '../../img/bandeiras/Egito.svg' },
+                { name: 'Nigéria', flagPath: '../../img/bandeiras/Nigeria.svg' },
+                { name: 'Síria', flagPath: '../../img/bandeiras/Syria.png'},
+                // Adicione os demais países aqui
+            ];
 
             // Remova qualquer classe de animação existente
             sorteButton.classList.remove('animate');
@@ -54,14 +72,17 @@
 
             // Exibir o resultado após a animação
             setTimeout(function() {
-                resultsDiv.innerText = 'Você obteve: ';
-                var resultSpan = document.createElement('span');
-                resultSpan.textContent = resultText;
-                resultSpan.classList.add(resultColorClass);
-                resultsDiv.appendChild(resultSpan);
+                resultsDiv.innerText = 'Você obteve: ' + resultText;
                 resultsDiv.style.display = 'block'; // Mostra a div de resultados
+
+                // Escolha um país aleatório e exiba sua bandeira
+                var randomCountry = countries[Math.floor(Math.random() * countries.length)];
+                flagImg.src = randomCountry.flagPath;
+                flagImg.alt = 'Bandeira do ' + randomCountry.name;
+                flagContainer.style.display = 'block'; // Mostra o contêiner da bandeira
             }, 1000); // Tempo da animação em milissegundos
-        });
+    });
+
     </script>
 </body>
 </html>
