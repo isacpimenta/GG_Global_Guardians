@@ -4,126 +4,127 @@ var submitButton = document.getElementById('submit');
 
 var questions = [
     {
-        question: "Quais são algumas das principais tradições culturais japonesas?",
+        question: "Quem é o líder supremo atual da Coreia do Norte?",
         choices: [
-            "Cerimônia do chá e kendo.",
-            "Dança do ventre e festivais de música eletrônica.",
-            "Desfiles de carnaval e música samba.",
-            "Celebração de St. Patrick's Day e jogos de futebol."
-        ],
-        correctAnswer: 0
-    },
-    {
-        question: "Como a sociedade japonesa tradicionalmente valoriza a educação?",
-        choices: [
-            "Priorizando apenas a educação formal.",
-            "Incentivando a busca por conhecimento e excelência acadêmica.",
-            "Desencorajando a educação para a maioria da população.",
-            "Limitando o acesso à educação."
+            "Kim Jong-il",
+            "Kim Jong-un",
+            "Kim Jong-nam",
+            "Kim Jong-chul"
         ],
         correctAnswer: 1
     },
     {
-        question: "Qual é a capital do Japão?",
+        question: "Como é o sistema de governo na Coreia do Norte?",
         choices: [
-            "Kyoto",
-            "Osaka",
-            "Tóquio",
-            "Hiroshima"
+            "Democracia multipartidária",
+            "Monarquia constitucional",
+            "Ditadura totalitária",
+            "República presidencialista"
         ],
         correctAnswer: 2
     },
     {
-        question: "Como o Japão preserva sua identidade cultural única?",
+        question: "Qual é o principal partido político na Coreia do Norte?",
         choices: [
-            "Assimilando culturas estrangeiras.",
-            "Protegendo e promovendo suas tradições, artes e festivais.",
-            "Ignorando completamente sua história cultural.",
-            "Adotando a cultura de outros países."
+            "Partido Comunista da Coreia",
+            "Partido dos Trabalhadores da Coreia",
+            "Partido Democrático da Coreia",
+            "Partido Nacional Democrata da Coreia"
         ],
         correctAnswer: 1
     },
     {
-        question: "Quais são alguns dos alimentos tradicionais japoneses?",
+        question: "Como a mídia é controlada na Coreia do Norte?",
         choices: [
-            "Pizza e hambúrgueres.",
-            "Sushi e sashimi.",
-            "Espaguete e lasanha.",
-            "Batatas fritas e cachorro-quente."
+            "É livre e independente",
+            "É censurada e controlada pelo Estado",
+            "É controlada por empresas privadas",
+            "Não existe mídia na Coreia do Norte"
         ],
         correctAnswer: 1
     },
     {
-        question: "Como o Japão aborda questões de igualdade de gênero?",
+        question: "Quais são algumas das práticas culturais tradicionais na Coreia do Norte?",
         choices: [
-            "Priorizando os direitos das mulheres em todas as áreas da sociedade.",
-            "Limitando as oportunidades das mulheres em comparação com os homens.",
-            "Ignorando completamente as questões de gênero.",
-            "Excluindo as mulheres de participar na sociedade japonesa."
+            "Artes marciais e culinária exótica",
+            "Dança do leão e cerimônias de chá",
+            "Artesanato em papel e festivais de música folclórica",
+            "Propaganda política e culto à personalidade dos líderes"
+        ],
+        correctAnswer: 3
+    },
+    {
+        question: "Como a Coreia do Norte aborda questões de igualdade de gênero?",
+        choices: [
+            "Promovendo a igualdade de gênero em todas as áreas da sociedade",
+            "Discriminando mulheres e limitando suas oportunidades",
+            "Ignorando completamente as questões de gênero",
+            "Excluindo as mulheres da participação na sociedade"
+        ],
+        correctAnswer: 1
+    },
+    {
+        question: "Como a Coreia do Norte lida com questões de liberdade religiosa?",
+        choices: [
+            "Garantindo liberdade religiosa para todos os cidadãos",
+            "Permitindo apenas uma religião oficial e reprimindo outras crenças",
+            "Promovendo o diálogo inter-religioso e a tolerância",
+            "Não há prática religiosa na Coreia do Norte"
+        ],
+        correctAnswer: 1
+    },
+    {
+        question: "Qual é o principal meio de comunicação utilizado pelo governo da Coreia do Norte para transmitir informações à população?",
+        choices: [
+            "Rádio",
+            "Televisão",
+            "Internet",
+            "Jornais estatais"
         ],
         correctAnswer: 0
     },
     {
-        question: "Quais são algumas das formas de entretenimento populares no Japão?",
+        question: "Como são as relações diplomáticas da Coreia do Norte com outros países?",
         choices: [
-            "Manga e anime.",
-            "Rodeios e luta livre.",
-            "Programas de culinária e jardinagem.",
-            "Telenovelas e reality shows."
-        ],
-        correctAnswer: 0
-    },
-    {
-        question: "Como o conceito de 'honra' é percebido na sociedade japonesa e como isso influencia as interações sociais?",
-        choices: [
-            "A honra é vista como irrelevante na sociedade japonesa.",
-            "A honra é valorizada e influencia profundamente as interações sociais, promovendo respeito e integridade.",
-            "A honra é usada como uma ferramenta para discriminar certos grupos sociais.",
-            "A honra é uma ideia estrangeira para os japoneses."
+            "Amigáveis e colaborativas",
+            "Tensas e frequentemente hostis",
+            "Neutras e pouco envolvidas",
+            "Dominadas por influência estrangeira"
         ],
         correctAnswer: 1
     },
     {
-        question: "Como o Japão lida com questões de acessibilidade e inclusão para pessoas com deficiência?",
+        question: "Qual é o papel das Forças Armadas na sociedade norte-coreana?",
         choices: [
-            "Acessibilidade e inclusão para pessoas com deficiência são prioridades, com leis e políticas que visam garantir igualdade de oportunidades.",
-            "Pessoas com deficiência são frequentemente marginalizadas e excluídas da sociedade japonesa.",
-            "O Japão não tem preocupações com acessibilidade para pessoas com deficiência.",
-            "A acessibilidade é restrita a certas áreas urbanas do Japão."
+            "Proteger os direitos humanos",
+            "Preservar a democracia",
+            "Manter o regime e defender o país contra ameaças externas",
+            "Promover o desenvolvimento econômico"
         ],
-        correctAnswer: 0
+        correctAnswer: 2
     },
     {
-        question: "Como o sistema educacional japonês aborda a diversidade cultural e étnica dentro das salas de aula?",
+        question: "Como é o acesso à internet na Coreia do Norte?",
         choices: [
-            "Promovendo a segregação e discriminando alunos de diferentes origens culturais.",
-            "Incentivando a inclusão e celebrando a diversidade cultural como uma parte importante do aprendizado.",
-            "Ignorando completamente as diferenças culturais e étnicas dos alunos.",
-            "Excluindo alunos de origens étnicas diferentes do sistema educacional japonês."
+            "Totalmente aberto e sem restrições",
+            "Altamente controlado e censurado pelo governo",
+            "Livre, mas monitorado para garantir a segurança",
+            "Inexistente, a internet não está disponível para a população"
         ],
         correctAnswer: 1
     },
     {
-        question: "Qual é a atitude do Japão em relação à imigração e à diversidade étnica?",
+        question: "Quais são algumas das políticas de controle de natalidade implementadas pelo governo norte-coreano?",
         choices: [
-            "O Japão adota uma política de imigração aberta, incentivando a diversidade étnica.",
-            "A imigração é restrita e a diversidade étnica é geralmente vista com desconfiança.",
-            "O Japão não tem políticas em relação à imigração e à diversidade étnica.",
-            "O Japão tem políticas que excluem certos grupos étnicos da imigração."
+            "Estímulo à reprodução para aumentar a população",
+            "Restrições severas ao número de filhos por família",
+            "Promoção de planejamento familiar e acesso a métodos contraceptivos",
+            "Ausência de políticas de controle de natalidade"
         ],
         correctAnswer: 1
-    },
-    {
-        question: "Como o Japão aborda questões de saúde mental na sociedade?",
-        choices: [
-            "Priorizando a saúde mental e fornecendo ampla acessibilidade a serviços de apoio e tratamento.",
-            "Ignorando questões de saúde mental e estigmatizando aqueles que buscam ajuda.",
-            "Saúde mental não é considerada uma prioridade no Japão.",
-            "Apenas indivíduos de certos grupos têm acesso a serviços de saúde mental."
-        ],
-        correctAnswer: 0
     }
 ];
+
 
 // Define the random questions once and reuse the same set
 var randomQuestions = shuffle(questions).slice(0, 3);
